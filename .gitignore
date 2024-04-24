@@ -1,6 +1,7 @@
 .env
 .DS_Store
 .phpunit.result.cache
+.phpunit.cache
 build
 composer.lock
 docs

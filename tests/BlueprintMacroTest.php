@@ -15,7 +15,7 @@ class BlueprintMacroTest extends TestCase
             $table->gtin();
         });
 
-        $this->assertEquals('string', Schema::getColumnType('products', 'gtin'));
+        $this->assertTrue(in_array(Schema::getColumnType('products', 'gtin'), ['string', 'varchar']));
     }
 
     /** @test */
